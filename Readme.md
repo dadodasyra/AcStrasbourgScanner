@@ -9,3 +9,8 @@ Il est plus rapide d'indiquer le préfixe de l'établissement (thread.js ligne 4
 Si vous voulez indiquer un prefix moins précis (7 caractères par exemple), il vous faut changer le 3 de la ligne 20 qui correspond à la taille du suffixe.
 
 N'hésitez pas à jouer avec les sleep si vous avez des erreurs car vous avez une connexion 💩.
+
+
+### Attention
+Le site de l'académie de Strasbourg bloque les IP temporairement au bout de 100 requêtes (pile).
+C'est pour cela que le fichier index.js lance 3 threads de 30 requêtes. Vous devriez changer d'ip avec un VPN après chaque vague puis changer le "base" ligne 5 du index.js
